@@ -1,0 +1,95 @@
+.VacationForm{
+  display: inline-block;
+  width: 400px;
+  height: 254px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  border: solid 1px #cccccc;
+}
+.Title{
+  display: inline-block;
+  width: 398px ;
+  height: 53px;
+  text-align: left;
+
+}
+.TitleText{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  color: #2ecc71;
+  display: inline-block;
+  font-weight: bold;
+  float: left;
+  text-align: left;
+  margin-left: 0;
+}
+.closeSign{
+
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 100px;
+}
+.closeSign:focus{
+  display: inline-block;
+  border: none;
+
+}
+
+
+
+.commentsData{
+  width: 365.7px;
+  height: 114px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ececec;
+  border: solid 1px #cccccc;
+
+
+  float: left;
+  display: inline-block;
+  margin-left: 17px;
+  margin-top: 10px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.commentsNote{
+  width: 350px;
+  height: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #7c7c7c;
+  margin-top: 51px ;
+  margin-left: 190px;
+}
+.horizontalLine{
+  display: inline-block;
+  width: 647px;
+  height: 1px;
+  border: solid 1px #cccccc;
+  margin-top: 10px;
+}
+
+.ApproveButton{
+
+  font-size: 18px;
+  color: #ffffff;
+  width: 366.7px;
+  height: 43px;
+  border-radius: 5px;
+  border-color: #2ecc71;
+  background-color: #2ecc71;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 14px ;
+  margin-left: 17px;
+}
+.ApproveButton:focus{
+
+  border-color: #2ecc71;
+  background-color: #2ecc71;
+
+}

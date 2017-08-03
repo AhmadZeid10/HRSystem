@@ -1,0 +1,85 @@
+
+<div id="wrapper" *ngIf="isReady" >
+  <!-- Navigation -->
+  <nav role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Top Menu Items -->
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <div class="nav navbar-nav side-nav">
+        <div >
+          <span class="logo" ><img class="gb_6b" src="https://www.google.com/a/exalt.ps/images/logo.gif?alpha=1&amp;service=google_default" style="max-width:144px;max-height:60px">  </span>
+          <span class="line">|</span>
+          <span class="HR-SYSTEM">HR SYSTEM</span>
+        </div>
+        <div class="user-photo"> <img class="user-image"   *ngIf="isReady" [src]="userImage"></div>
+        <div class="userAndInfoSign">
+          <span  class="user-name" *ngIf="isReady"   >{{this.userName}}  </span>
+
+          <ng-template   #popContent  popoverClass="T">
+
+            <div class="info-sign-information">
+              <div class="info-sign-Employment-date-label">
+                <p class="info-Employment-date-label-text"> Employment Date:</p>
+                <p class="info-Employment-date-label-text"> Manger 1:</p>
+                <p class="info-Employment-date-label-text"> Manger 2:</p>
+                <p class="info-Employment-date-label-text"> Break Time:</p>
+                <p class="info-Employment-date-label-text"> Employee Type:</p>
+                <p class="info-Employment-date-label-text"> Working time cat:</p>
+              </div>
+
+
+              <div class="info-sign-Employment-date-label">
+                <p class="info-Employment-date-label-text"> {{this.EmploymentData}}</p><br>
+                <p class="info-Employment-date-label-text"> {{this.manger1}}</p><br>
+                <p class="info-Employment-date-label-text"> {{this.manger2}}</p><br>
+                <p class="info-Employment-date-label-text"> {{this.breakTime}}</p><br>
+                <p class="info-Employment-date-label-text"> {{this.employeeType}}</p><br>
+                <p class="info-Employment-date-label-text"> {{this.workingTime}}</p><br>
+              </div>
+
+            </div>
+
+          </ng-template>
+
+
+          <span class="info-sign"   [ngbPopover]="popContent"  popoverClass="T" triggers="mouseenter:mouseleave" popoverTitle="Personal Information" container="body"  placement="bottom-left"  ><img src="https://image.ibb.co/kxrFnv/I.png"></span>
+        </div>
+
+        <p  class="user-Email" *ngIf="isReady">{{this.userEmail}}</p>
+
+        {{ loadTab() }}
+        <div class="myVacationTab"    (click)="activeTab($event)"   >
+          <span class="blue-label" id="myVacationBlueTab"></span>
+          <div class="vacation-tab" id="myVacation" >
+            My Vacations
+          </div>
+        </div>
+
+
+
+
+
+        <div class="MangerVacationTab"    (click)="activeTab($event)">
+          <span class="blue-label-mangerVacation"  id="mangerBlueTab"></span>
+          <div class="MangerVacation-tab"  id="mangerVacation">
+            Manger Vacations
+          </div>
+        </div>
+
+
+        <div class="timeAttendanceVacationTab"   id="timeAttendance" (click)="activeTab($event)">
+          <span class="blue-label-timeAttendance" id = "timeAttendanceBlueTab"></span>
+          <div class="timeAttendanceVacation-tab"   id="Attendance">
+            Time Attendance
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+</div><!-- /#wrapper -->

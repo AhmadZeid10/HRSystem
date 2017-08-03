@@ -1,0 +1,77 @@
+
+<body>
+<div   *ngIf="isReady" >
+
+  <div class="dataDropDown">
+    <select class="form-control selectYear" (change)="chooseDay($event)" >
+      <option *ngFor="let day of days ; let i = index " [selected]="i==this.id" (value)="day">{{this.daysName[i]}}</option>
+
+    </select>
+  </div>
+
+
+  <div class="horizontalLine"></div>
+
+  <div class="dataTabel" >
+    <table class="table " cellspacing="0" cellpadding="0">
+      <tr >
+        <th class="name" >Name</th>
+        <th class="From" colspan="2">From <br>
+          <p  class="Day"> Day</p>
+          <p class="Hour"> Hour</p>
+        </th>
+        <th class="To">To <br>
+          <p  class="Day"> Day</p>
+          <p class="Hour"> Hour</p></th>
+        <th class="Type">Type</th>
+        <th class="Total" >Total</th>
+        <th class="comments" >Comments</th>
+        <th class="comments" >Sick Report</th>
+
+      </tr>
+      <div class="horizontalLine2"> </div>
+      <tbody class="tableBody">
+
+      <tr class="singleVacation" *ngFor="let myvacation of this.activeVacationRequests ; let i = index " >
+
+        <td class="nameData" >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/7/79/20120912104728%21Face-smile.svg/120px-Face-smile.svg.png" width="31" height="31"  style="float: left; margin-left: 4px">
+
+          <p class="namePart">{{myvacation.name}}</p>  </td>
+        <td class="FromDay">{{myvacation.fromDay}} </td>
+        <td  class="FromHour">{{myvacation.fromHour}} </td>
+        <td class="ToDay">{{myvacation.toDay}}</td>
+        <td  class="ToHour">{{myvacation.toHour}}</td>
+        <td  class="TypeData">{{myvacation.type}}</td>
+        <td  class="TotalData">{{myvacation.total}}</td>
+        <td  class="CommentData">{{myvacation.comments}}</td>
+        <td  class="SickReport">
+
+          <span >   <img  *ngIf="myvacation.type=== 'Sick'"  src="https://d2yvv6a7kcdl71.cloudfront.net/55b8dd0f18cbbb8110875e08/assets/845EF6B2-61D6-4D85-B8D1-B2ED4D19A3AC.png"> <p></p> </span>
+        </td>
+
+        <td class="AcceptReject" >
+          <span> <img src= 'https://d2yvv6a7kcdl71.cloudfront.net/55b8dd0f18cbbb8110875e08/assets/3F064879-B137-42D3-B93D-B38BE5D674C3.png' (click)="acceptVacation($event)"  [id]="this.vacationRequest.indexOf(myvacation)"></span>
+          <span class="RejectButton"> <img  src='https://d2yvv6a7kcdl71.cloudfront.net/55b8dd0f18cbbb8110875e08/assets/9F612745-1460-4A4A-89FE-23EE8A30EC6F.png' (click)="RejectVacation($event)"  [id]="this.vacationRequest.indexOf(myvacation)"></span>
+
+        </td>
+
+        <div class="horizontalLine3"> </div>
+      </tr>
+      </tbody>
+    </table>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+</body>

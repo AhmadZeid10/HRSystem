@@ -1,0 +1,23 @@
+.sidebar{
+  float: left;
+  margin-left: 95px;
+
+}
+
+.all
+{
+  display: inline-block;
+  width: 1550px;
+
+}
+
+
+.main{
+  display: inline-block;
+  margin-left: -60px;
+
+  width: 1250px;
+  height: 794px;
+
+
+}

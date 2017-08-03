@@ -1,0 +1,76 @@
+<div class="VacationForm">
+  <div class="modal-header Title">
+    <h4 class="modal-title TitleText">Ask for Vacation</h4>
+    <button type="button" class="close closeSign" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<div >
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+    <div class="form-group " style="float: left; display: inline-block">
+
+      <label for="startDate" class="labelStartDate">Start Date</label>
+      <date-picker class="startDateInput" id="startDate" ngModel name="Startdate"  required [showClearButton]="false"  ></date-picker>
+      <img  class="iconAt"  src=" https://image.ibb.co/bDmxkF/Capture.png" >
+      <div class="FromTime">
+        <date-picker class="timepiker" ngModel name="startTime"  required [showClearButton]="false" mode="time" ></date-picker>
+      </div>
+
+   <div class="endDiv">
+      <label for="endDate" class="labelStartDate">End Date</label>
+      <date-picker class="endDateInput" id="endDate" ngModel name="endDate"  required [showClearButton]="false"  ></date-picker>
+     <img  class="iconAt"  src=" https://image.ibb.co/bDmxkF/Capture.png" >
+      <div class="FromTime">
+        <date-picker class="timepiker" ngModel name="endTime" [showClearButton]="false" required mode="time" ></date-picker>
+      </div>
+   </div>
+
+
+      <div class="typeDiv"    >
+        <label  class="labelStartDate"  >Type</label>
+
+          <div ngbDropdown class="d-inline-block"  >
+            <button  type="button" class="btn btn-outline-primary typeButton" id="dropdownBasic1" ngbDropdownToggle    required name="Type"  [(ngModel)]=" type" (value)="type"  ngDefaultControl > {{this.type}}</button>
+             <div    class="dropdown-menu typeMenu" aria-labelledby="dropdownBasic1"  >
+              <button  type="button"id='Sick' class="dropdown-item itemInType" value="Sick"  (click)="chooseType($event)">Sick</button>
+              <button  type="button" id= 'Perosnal' class="dropdown-item itemInType" value="Perosnal"  (click)="chooseType($event)">Perosnal</button>
+              <button  type="button"  id= 'Other' class="dropdown-item itemInType" value="Other"   (click)="chooseType($event)" >Other</button>
+
+            </div>
+          </div>
+        </div>
+
+
+      <div class="SickReportDiv" >
+        <label  class="labelStartDate"  >Sick Report</label>
+        <input  ngModel name="FileUpload" type="file" ng2FileSelect  class="uploadReportButton" />
+      </div>
+
+      <div class="commentsDiv">
+        <label  class="labelStartDate"  >Comments</label>
+        <textarea class="form-control commentsData" ngModel name="comments" ></textarea>
+        <p class="commentsNote"> Note: Vacation request not granted until approved bt your manger(s)</p>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <div class="modal-header"></div>
+
+
+    <div  class="submitButtonDiv">
+      <button  type="submit" class="btn btn-primary submitButton"  (click)="activeModal.dismiss('Cross click')" >Submit</button>
+    </div>
+  </form>
+
+
+  </div>
+
+</div>

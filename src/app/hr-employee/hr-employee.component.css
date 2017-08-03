@@ -1,0 +1,19 @@
+.sidebar{
+  display: inline-block;
+  float: left;
+  margin-left: 47px;
+}
+
+.all
+{
+  display: inline-block;
+  width: 1550px;
+}
+
+
+.main{
+  display: inline-block;
+  margin-left: -60px;
+  width: 1250px;
+  height: 794px;
+}

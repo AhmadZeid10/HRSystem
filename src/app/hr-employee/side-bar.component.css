@@ -1,0 +1,374 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@media(min-width:768px) {
+  body {
+    margin-top: 50px;
+  }
+
+}
+
+html{
+
+  width:100%;
+  height:100%;
+}
+body{
+  width:100%;
+  height:100%;
+}
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 225px;
+  }
+
+  #page-wrapper {
+    padding: 22px 10px;
+  }
+}
+
+/* Top Navigation */
+
+.top-nav {
+  padding: 0 15px;
+}
+
+.top-nav>li {
+  display: inline-block;
+  float: left;
+}
+
+.top-nav>li>a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+  color: #fff;
+  background-color: #1a242f;
+}
+
+.top-nav>.open>.dropdown-menu {
+  float: left;
+  position: absolute;
+  margin-top: 0;
+  /*border: 1px solid rgba(0,0,0,.15);*/
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+  white-space: normal;
+}
+
+/* Side Navigation */
+
+
+.side-nav {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 794px;
+  margin-left: -350px;
+  border: none;
+  border-radius: 0;
+
+  overflow-y: auto;
+  background-color: #e6e6e6;
+  /*background-color: #5A6B7D;*/
+  bottom: 0;
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+
+.side-nav>li>a {
+  width: 300px;
+  border-bottom: 1px rgba(0,0,0,.3) solid;
+}
+
+.side-nav li a:hover,
+.side-nav li a:focus {
+  outline: none;
+  background-color: #1a242f !important;
+}
+
+
+.side-nav>li>ul {
+  padding: 0;
+  border-bottom: 1px rgba(0,0,0,.3) solid;
+}
+
+.side-nav>li>ul>li>a {
+  display: block;
+  padding: 10px 15px 10px 38px;
+  text-decoration: none;
+  /*color: #999;*/
+  color: #fff;
+}
+
+.side-nav>li>ul>li>a:hover {
+  color: #fff;
+}
+
+.navbar .nav > li > a > .label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: normal;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 1.0em;
+  text-align: center;
+  padding: 2px;
+}
+
+.navbar .nav > li > a:hover > .label {
+  top: 10px;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 13.4px;
+  margin-left: 24px;
+  margin-bottom: 0;
+
+}
+
+.line {
+  font-size: 150%;
+  color:  #cccccc;
+  margin-bottom: 0;
+}
+
+.HR-SYSTEM {
+  display: inline-block;
+  width: 97px;
+  height: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #7c7c7c;
+  top: 33px;
+  margin-bottom: 0;
+
+}
+
+.user-image{
+  margin-top: -1px;
+  margin-left: 90px;
+  max-width: 120px;
+  max-height: 120px;
+  margin-bottom: 0;
+}
+.user-name{
+  display: inline-block;
+  width: 204px;
+  height: 24px;
+  font-size: 20px;
+  color: #619cba;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 48px;
+  text-align: center;
+  float: left;
+
+
+}
+.user-Email {
+  width: 203px;
+  height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #7c7c7c;
+  margin-right: 49px;
+  margin-left: 48px;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+.info-sign{
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 16px;
+  width: 25px;
+  height: 25px;
+  font-size: 16px ;
+  margin-top: 2px;
+
+}
+
+
+
+.blue-label{
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: #619cba;
+  margin: 45px 0 0 0 ;
+}
+.myVacationTab{
+  float: left;
+  margin-top: 20px;
+}
+.vacation-tab{
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 45px 0 1px -4px;
+  text-align: left;
+  vertical-align:top;
+  padding: 10.8px 9.6px 13.2px 9.6px ;
+  font-size: 14px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.info-sign-information{
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+
+
+
+}
+.info-sign-Employment-date-label {
+  display: inline-block;
+  width: 121.9px;
+  height: 120px;
+  margin-left: 0;
+  margin-right: 0;
+
+
+
+
+}
+.info-Employment-date-label-text{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #7c7c7c;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+.userAndInfoSign{
+  display: inline-block;
+  float: left;
+  margin-top: 12px;
+}
+
+.MangerVacationTab{
+  float: left;
+  margin-top: -40px;
+
+}
+
+.blue-label-mangerVacation{
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 0 0 ;
+}
+.MangerVacation-tab{
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 1px -4px;
+  text-align: left;
+  vertical-align:top;
+  padding: 10.8px 9.6px 13.2px 9.6px ;
+  font-size: 14px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.timeAttendanceVacationTab{
+  float: left;
+  margin-top: -43px;
+
+
+}
+.blue-label-timeAttendance{
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 0 0 ;
+}
+
+.timeAttendanceVacation-tab{
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 1px -4px;
+  text-align: left;
+  vertical-align:top;
+  padding: 10.8px 9.6px 13.2px 9.6px ;
+  font-size: 14px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.managedHolidaysTab{
+  float: left;
+  margin-top: -43px;
+}
+.blue-label-managedHolidays{
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 0 0 ;
+}
+
+.managedHolidays-tab{
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  background-color: #e6e6e6;
+  margin: 45px 0 1px -4px;
+  text-align: left;
+  vertical-align:top;
+  padding: 10.8px 9.6px 13.2px 9.6px ;
+  font-size: 14px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+}

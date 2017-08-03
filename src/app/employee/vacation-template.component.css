@@ -1,0 +1,266 @@
+.VacationForm{
+  display: inline-block;
+  width: 648px;
+  height: 467px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  border: solid 1px #cccccc;
+}
+.Title{
+  display: inline-block;
+  width: 640px ;
+  height: 53px;
+  text-align: left;
+
+}
+.TitleText{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  color: #222222;
+  display: inline-block;
+  font-weight: bold;
+  float: left;
+  text-align: left;
+  margin-left: 0;
+}
+.closeSign{
+
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 100px;
+}
+.closeSign:focus{
+  display: inline-block;
+  border: none;
+
+}
+.labelStartDate{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+.startDateInput{
+  display: inline-block;
+  width: 217px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  margin-left: 95px;
+  margin-top: 10px;
+  float: left;
+  font-size: 20px;
+  color: #7c7c7c;
+}
+.iconDate {
+  display: inline-block;
+  height: 20px;
+  width: 18px;
+  background-color: #ffffff;
+  border: none;
+  margin-top: 11px;
+  float: left;
+  margin-left: -35px;
+
+}
+.iconAt{
+  display: inline-block;
+ margin-left: 5px;
+  background-color: #ffffff;
+  border: none;
+  margin-top: 11px;
+  float: left;
+}
+.fromHour{
+  display: inline-block;
+  width: 79px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ececec;
+  border: solid 1px #cccccc;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.FromTime{
+  display: inline-block;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 5px;
+  margin-top: 10px !important;
+
+
+}
+.fromMin{
+  display: inline-block;
+  width: 79px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ececec;
+  border: solid 1px #cccccc;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+.timepiker{
+  display: inline-block;
+  font-size: 20px;
+}
+
+.endDiv{
+  display: inline-block;
+  margin-left: 1px;
+  margin-top: 3px;
+  float: left;
+}
+
+.endDateInput{
+  display: inline-block;
+  width: 217px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  margin-left: 101px;
+  margin-top: 10px;
+  float: left;
+  font-size: 20px;
+  color: #7c7c7c;
+}
+.typeDiv{
+  display: inline-block;
+  float: left;
+  margin-top: -2px;
+}
+
+.d-inline-block{
+
+  margin-top:15px;
+  margin-left: 135px;
+}
+.typeButton{
+  display: inline-block;
+  width: 217px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  font-size: 20px;
+  color: black;
+
+
+}
+.typeMenu{
+  width: 217px;
+  font-size: 20px;
+}
+.typeButton:hover{
+  background-color: #ffffff;
+  color: black;
+
+}
+.typeButton:focus{
+  background-color: #ffffff;
+  color: black;
+
+}
+.typeButton:first-child{
+  background-color: #ffffff;
+  color: black;
+
+}
+.itemInType:focus{
+  background-color: #ffffff;
+  color: black;
+}
+.SickReportDiv{
+  display: inline-block;
+
+  clear: both;
+  float: left;
+  margin-top: 2px;
+}
+
+.uploadReportButton{
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #619cba;
+  margin-top: 15px;
+  margin-left: 82px;
+  border: none;
+}
+.uploadReportButton:focus{
+  border-color: white;
+}
+
+.commentsDiv{
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin-top: 2px;
+}
+
+
+.commentsData{
+  float: left;
+  display: inline-block;
+  margin-left: 188px;
+  margin-top: -30px;
+  width: 432px;
+  height: 114px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ececec;
+  border: solid 1px #cccccc;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.commentsNote{
+  width: 350px;
+  height: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #7c7c7c;
+  margin-top: 51px ;
+  margin-left: 190px;
+}
+.horizontalLine{
+  display: inline-block;
+  width: 647px;
+  height: 1px;
+  border: solid 1px #cccccc;
+  margin-top: 10px;
+}
+
+.submitButtonDiv{
+  margin-top: 10px;
+  margin-left: 23px;
+
+}
+.submitButton{
+  width: 602px;
+  height: 32px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: #619cba;
+  font-size: 16px;
+}
+
+

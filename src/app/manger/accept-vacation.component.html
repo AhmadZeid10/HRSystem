@@ -1,0 +1,14 @@
+<div class="VacationForm">
+  <div class="modal-header Title">
+    <h4 class="modal-title TitleText">Accept Vacation</h4>
+    <button type="button" class="close closeSign" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span >&times;</span>
+    </button>
+  </div>
+
+
+  <textarea class="form-control commentsData" ngModel name="comments" ></textarea>
+  <button   class="btn btn-primary ApproveButton" (click)="approveVacation()" >Approve</button>
+
+
+</div>

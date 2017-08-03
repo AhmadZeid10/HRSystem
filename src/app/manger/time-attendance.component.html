@@ -1,0 +1,80 @@
+<div  class="topDiv">
+
+      <div class="form-group fromDiv" >
+      <label  class="labelStartDate">From</label>
+      <date-picker class="startDateInput" id="fromDate"
+      ngModel name="fromDate" mode="date" required [showClearButton]="false"
+      format="ddd  DD MMMM,  YYYY"></date-picker>
+
+      </div>
+        <div class="form-group toDiv">
+          <label  class="labelEndDate">To</label>
+          <date-picker class="startDateInput" id="toDate"
+                       ngModel name="toDate" mode="date" required [showClearButton]="false"
+                       format="ddd  DD MMMM,  YYYY"></date-picker>
+        </div>
+
+  <button type="button" class="btn btn-primary applyButton" (click)="AttendanceTime()">Apply</button>
+  <div class="horizontalLine"></div>
+
+
+  <div class="dataTabel" >
+    <table class="table " cellspacing="0" cellpadding="0">
+      <tr >
+        <th class="name" >Date</th>
+        <th class="time" colspan="2">Time <br>
+          <p  class="In"> In</p>
+          <p class="Out"> Out</p>
+        </th>
+        <th class="totalWorking" >Total Working Hrs</th>
+        <th class="totalWorking" >Time Difference</th>
+      </tr>
+
+
+</table>
+
+
+
+
+    <div class="horizontalLine5"></div>
+
+
+
+
+
+    <div  class="attendanceDiv" *ngFor="let data of employeeData ; let i = index "  >
+      <button  class="btn btn-primary HeadRowAttendance"  (click)="openTab($event)" [id] = "i">
+        <img  class="rowImage"  [id] = "i"  [src]=" 'https://d2yvv6a7kcdl71.cloudfront.net/55b8dd0f18cbbb8110875e08/assets/5EB6157A-B31D-40D7-B038-942EBA78FB5B.png'"/>
+        <p  class="employeeName" [id] = "i">{{data[0]}}</p>
+        <p  class="timeDifData" [id] = "i" [style.color]="data[3]">{{data[2]}}</p>
+      </button>
+      <div class="horizontalLine4"></div>
+      <div *ngIf="this.tab[i]">
+        <div class="timeDifElement" *ngFor="let ele of data[1]">
+          <p class="timeDefEleDate"> {{ele[0]}}</p>
+          <p class="timeDefEleIn"> {{ele[1]['inTime']}}</p>
+          <p class="timeDefEleOut" > {{ele[1]['outTime']}}</p>
+          <p class="timeDefEleTotal"> {{ ele[2] }}</p>
+          <p class="timeDefEleTimeDif" [style.color]="ele[6]"> {{ele[4]}}</p>
+          <div class="horizontalLine6"></div>
+        </div>
+
+      </div>
+      <div *ngIf="this.tab[i]" class="horizontalLine4"></div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div>

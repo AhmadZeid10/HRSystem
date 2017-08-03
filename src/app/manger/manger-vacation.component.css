@@ -1,0 +1,388 @@
+.dataDropDown{
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #e6e6e6;
+  float: left;
+
+}
+
+.selectYear{
+
+  display: inline-block;
+  font-size: 18px;
+  width: 140px;
+  height: 40px  !important;
+
+}
+
+
+
+.horizontalLine{
+  display: inline-block;
+  width: 1030px;
+  height: 1px;
+  border: 1px  #cccccc;;
+  background-color: #cccccc;
+  margin-top: 83px;
+  margin-left: -145px;
+}
+
+.name{
+  display: inline-block;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+
+}
+.dataTabel {
+  display: inline-block;
+  margin-top: -5px;
+
+}
+.From{
+  display: inline-block;
+  border: none;
+  margin-left: 100px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.Day{
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  color: #7c7c7c;
+  margin-bottom: 0;
+}
+.Hour{
+  display: inline-block;
+  margin-left: 68px;
+  margin-top: 5px;
+  color: #7c7c7c;
+  margin-bottom: 0;
+}
+.To{
+  display: inline-block;
+  border: none;
+  margin-left: 0;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.Type{
+  display: inline-block;
+  border: none;
+  margin-left: -20px;
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+
+}
+
+.ok-signAll{
+  display: inline-block;
+  margin-left: 145px;
+}
+.ok-signPersonal{
+  display: inline-block;
+  margin-left: 105px;
+
+}
+.ok-signSick{
+  display: inline-block;
+  margin-left: 136px;
+
+}
+.ok-signOther{
+  display: inline-block;
+  margin-left: 127px;
+
+}
+
+.Total{
+  display: inline-block;
+  border: none;
+  margin-left: 59px;
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.comments{
+  display: inline-block;
+  border: none;
+  margin-left: 45px;
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+
+}
+
+
+
+.Status{
+  display: inline-block;
+  border: none;
+  margin-left: 45px;
+  margin-top: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+.Status:hover{
+  background-color: #ffffff;
+  border: none;
+}
+.Status:focus{
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+
+.Status:checked {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+.statusDropDown{
+  width: 200px;
+  height: 146.1px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+
+
+
+}
+
+.singleVacation{
+
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  border-top: #cccccc !important;
+
+}
+.tableBody{
+  display: inline-block;
+  border: none;
+  width: 1030px !important;
+  margin-top:5px;
+}
+.horizontalLine2{
+
+  width: 1030px;
+  height: 1px;
+  border: 1px  #cccccc;;
+  background-color: #cccccc;
+  margin-top: -1px !important;
+  margin-left: 13px;
+  margin-bottom: 0;
+
+
+}
+.horizontalLine3{
+  width: 1030px;
+  height: 1px;
+  border: 1px  #cccccc;;
+  background-color: #cccccc;
+  margin-top: 43px !important;
+  margin-left: 13px;
+  margin-bottom: 0;
+}
+
+.nameData{
+  display: inline-block;
+  border: none;
+  margin-left: 11px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  margin-top: -4px;
+  color: #7c7c7c;
+}
+.namePart{
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.FromDay{
+  display: inline-block;
+  border: none;
+  margin-left: -22px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  margin-top: -4px;
+  color: #7c7c7c;
+
+}
+.FromHour{
+  display: inline-block;
+  border: none;
+  margin-left: -90px !important;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+
+}
+.ToDay{
+  display: inline-block;
+  border: none;
+  margin-left: -93px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  margin-top: -4px;
+  color: #7c7c7c;
+}
+.ToHour{
+  display: inline-block;
+  border: none;
+  margin-left: -92px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+
+}
+
+.TypeData{
+  display: inline-block;
+  border: none;
+  margin-left: -115px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+
+}
+.CommentData{
+  display: inline-block;
+  border: none;
+  margin-left: -59px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+
+}
+.TotalData {
+  display: inline-block;
+  border: none;
+  margin-left: -70px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+}
+.CommentData{
+  display: inline-block;
+  border: none;
+  margin-left: -70px;
+  width: 185px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+}
+.SickReport{
+  display: inline-block;
+  border: none;
+  margin-left: -58px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: -4px;
+}
+.AcceptReject {
+  display: inline-block;
+  border: none;
+  margin-left: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #7c7c7c;
+  margin-top: 0;
+}
+.RejectButton{
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+.threeIconDiv{
+  display: inline-block;
+  margin-left: 200px;
+  float: left !important;
+  margin-top: -23px;
+  width: 300px;
+  height: 30px;
+
+
+}
+.imgReport{
+  display: block;
+  float: left;
+  margin-left: 60px;
+  width: 50px !important;
+}
+.imgMsg{
+  display: block;
+  float: left;
+  margin-left: -17px;
+  margin-top: 4px;
+}
+.imgDoNotDisturb{
+  display: block;
+  float: left;
+  margin-left: 17px;
+  margin-top: 3px;
+}
+
+
+
