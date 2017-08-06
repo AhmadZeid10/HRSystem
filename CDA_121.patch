@@ -1,0 +1,53 @@
+Index: src/main.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main.ts	(revision 47d1e37b071ed828daa9e4cfaad04d909ac03f2b)
++++ src/main.ts	(revision )
+@@ -8,3 +8,7 @@
+ //enableProdMode();
+ platformBrowserDynamic().bootstrapModule(AppModule);
+ 
++
++
++
++
+Index: src/app/hr-employee/side-bar.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/app/hr-employee/side-bar.component.ts	(revision 47d1e37b071ed828daa9e4cfaad04d909ac03f2b)
++++ src/app/hr-employee/side-bar.component.ts	(revision )
+@@ -1,8 +1,8 @@
+ import { Component, OnInit } from '@angular/core';
+-import {HttpService} from "../services/http.service";
+-import {LoadPageService} from "../services/load-page.service";
+-import {Router} from "@angular/router";
+-import {Subscription} from "rxjs/Subscription";
++import {HttpService} from '../services/http.service';
++import {LoadPageService} from '../services/load-page.service';
++import {Router} from '@angular/router';
++import {Subscription} from 'rxjs/Subscription';
+ import {Location} from '@angular/common';
+ 
+ @Component({
+@@ -49,6 +49,8 @@
+ 
+     this.httpService.GetPic('/HR').subscribe(
+       (data: any) => { this.userImage = data.image;
++
++
+         this.userName = data.name;
+         this.userEmail = data.Email;
+         this.EmploymentData = data.EmploymentData;
+@@ -60,8 +62,6 @@
+         this.isReady = true;
+         this.loadpage.setdata(this.isReady);
+ 
+-
+-
+       }
+     );
+ 
